@@ -35,8 +35,8 @@ Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/prese
 ## Documentation
 
 Use the following links to learn more:<br>
-[nuxt 3 documentation](https://v3.nuxtjs.org)<br>
-[tailwindcss 3 documentation](https://tailwindcss.com/docs/installation)<br>
-[nuxtTailwind module documention](https://tailwindcss.nuxtjs.org/)<br>
-[pinia documentation](https://pinia.vuejs.org/)<br>
+[Nuxt 3 documentation](https://v3.nuxtjs.org)<br>
+[Tailwindcss 3 documentation](https://tailwindcss.com/docs/installation)<br>
+[NuxtTailwind module documention](https://tailwindcss.nuxtjs.org/)<br>
+[Pinia documentation](https://pinia.vuejs.org/)<br>
 
