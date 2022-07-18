@@ -34,7 +34,7 @@ Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/prese
 
 ## Documentation
 
-Use the following links to learn more:<br>
+Use the following links to learn more:<br><br>
 [Nuxt 3 documentation](https://v3.nuxtjs.org)<br>
 [Tailwindcss 3 documentation](https://tailwindcss.com/docs/installation)<br>
 [NuxtTailwind module documention](https://tailwindcss.nuxtjs.org/)<br>
