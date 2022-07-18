@@ -1,7 +1,5 @@
 # Nuxt3 TailwindCSS3 Pinia Starter
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
-
 ## Setup
 
 Make sure to install the dependencies:
@@ -33,3 +31,12 @@ yarn preview
 ```
 
 Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+
+## Documentation
+
+Use the following links to learn more:
+[nuxt 3 documentation](https://v3.nuxtjs.org)
+[tailwindcss 3 documentation](https://tailwindcss.com/docs/installation)
+[nuxtTailwind module documention](https://tailwindcss.nuxtjs.org/)
+[pinia documentation](https://pinia.vuejs.org/)
+
