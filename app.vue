@@ -209,7 +209,11 @@
         <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
           <!-- Replace with your content -->
           <div class="px-4 py-6 sm:px-0">
-            <div class="border-4 border-dashed border-gray-200 rounded-lg h-96"></div>
+            <div class="border-4 border-dashed border-gray-200 rounded-lg h-96">
+              Count:{{usersStore.$state.count}}<br>
+              <button @click="usersStore.increment()">Hit me</button><br>
+              {{ usersList }}
+            </div>
           </div>
           <!-- /End replace -->
         </div>
@@ -218,17 +222,10 @@
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      isOpen: false
-    }
-  },
-  methods: {
-    toggle () {
-      this.isOpen = !this.isOpen
-    }
-  }
-}
+<script setup>
+  import { useUsersStore } from '@/store/users'
+
+  var isOpen = false
+  const usersStore = useUsersStore()
+  const usersList = usersStore.usersAll
 </script>
