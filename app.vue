@@ -212,9 +212,16 @@
             <div class="border-4 border-dashed border-gray-200 rounded-lg h-96">
               Count:{{usersStore.$state.count}}<br>
               <button @click="usersStore.increment()">Hit me</button><br>
-              {{ usersList }}
+              {{ usersList }}<br>
+              {{ data }}
             </div>
           </div>
+          <!-- <div>
+            <h2>Starlink Launches</h2>    
+            <p v-for="(entry, i) of data?.launches" :key="entry.id">
+              {{ i + 1 }}. Mission Name: {{ entry.mission_name }} ({{        entry.launch_year      }})
+            </p>
+          </div> -->
           <!-- /End replace -->
         </div>
       </main>
@@ -228,4 +235,6 @@
   var isOpen = false
   const usersStore = useUsersStore()
   const usersList = usersStore.usersAll
+  // const { data } = await useAsyncData('starlink', () => GqlLaunches({ limit: 10 }));
+  const { keystone } = await useAsyncData('default', () => GqlPeople())
 </script>

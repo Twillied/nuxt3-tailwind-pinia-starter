@@ -1,0 +1,18 @@
+query people {
+  people {
+    name
+    addresses {
+      name
+      street
+    }
+    tasks {
+      label
+      priority
+      isComplete
+    }
+    images {
+      name
+      url
+    }
+  }
+}
