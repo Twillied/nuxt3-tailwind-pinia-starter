@@ -12,8 +12,9 @@ export default defineNuxtConfig({
     public: {
       'graphql-client': {
         clients: {
-          // starlink: 'https://api.spacex.land/graphql', // process.env.GQL_HOST
-          default: 'https://keystone-6-railway-example-production-d917.up.railway.app/api/graphql',
+          default: 'https://api.spacex.land/graphql', // process.env.GQL_HOST
+          keystone: 'https://keystone-6-railway-example-production-d917.up.railway.app/api/graphql'
+          // default: 'https://keystone-6-railway-example-production-d917.up.railway.app/api/graphql',
           // github: {
           //   host: 'https://api.github.com/graphql', // process.env.GQL_GITHUB_HOST
           //   token: 'your_access_token', // process.env.GQL_GITHUB_TOKEN & process.env.GQL_GITHUB_TOKEN_NAME
