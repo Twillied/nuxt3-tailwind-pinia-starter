@@ -236,6 +236,6 @@
   var isOpen = false
   const usersStore = useUsersStore()
   const usersList = usersStore.usersAll
-  const { data: launches } = await useAsyncData('starlink', () => GqlLaunches({ limit: 10 }));
+  const { data: launches } = await useAsyncData('starlink', () => GqlLaunches({ limit: 10 }))
   const { data: peeps } = await useAsyncData('keystone', () => GqlPeople())
 </script>
