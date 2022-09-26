@@ -214,7 +214,8 @@
               <button @click="usersStore.increment()">Hit me</button><br>
               {{ usersList }}<br>
               <!-- {{ launches }}<br> -->
-              {{ peeps }}
+              {{ peeps }}<br>
+              {{ peep }}
             </div>
           </div>
           <div>
@@ -236,6 +237,12 @@
   var isOpen = false
   const usersStore = useUsersStore()
   const usersList = usersStore.usersAll
-  const { data: launches } = await useAsyncData('starlink', () => GqlLaunches({ limit: 10 }))
-  const { data: peeps } = await useAsyncData('keystone', () => GqlPeople())
+  const testName = "Timmy D"
+  const testEmail = "tim@tad-holdings.com"
+  const testPass = "bullshit"
+  // const { data: launches } = await useAsyncData('starlink', () => GqlLaunches({ limit: 10 }))
+  // const { data: peeps } = await useAsyncData('keystone', () => GqlPeople())
+  const { data: peeps } = await useAsyncGql({  operation: 'people',  variables: { limit: 10 }})
+  const { data: peep } = await useAsyncGql({  operation: 'createPerson', variables: { name: testName, email: testEmail, password: testPass }}) 
+  const { data: launches } = await useAsyncGql({  operation: 'launches',  variables: { limit: 10 }})
 </script>
