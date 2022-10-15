@@ -7,12 +7,17 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^5.3.3",
-    "nuxt": "3.0.0-rc.11"
+    "@nuxtjs/tailwindcss": "^5.3.5",
+    "nuxt": "3.0.0-rc.11",
+    "typescript": "^4.8.4"
   },
   "dependencies": {
-    "@pinia/nuxt": "^0.4.2",
-    "nuxt-graphql-client": "^0.1.18",
-    "pinia": "^2.0.22"
+    "@pinia/nuxt": "^0.4.3",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/typography": "^0.5.7",
+    "node-fetch-native": "^0.1.7",
+    "nuxt-graphql-client": "^0.1.25",
+    "pinia": "^2.0.23"
   }
 }
